@@ -6,6 +6,7 @@ This is the code for implementing the SCRIMP algorithm :`SCRIMP: Scalable Commun
 Python == 3.7
    ```
     pip install -r requirements.txt
+    pip install --force-reinstall torch==1.12.1+cu113 --extra-index-url https://download.pytorch.org/whl/
    ```
     
 

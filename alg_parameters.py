@@ -67,7 +67,7 @@ class IntrinsicParameters:
 class SetupParameters:
     SEED = 1234
     USE_GPU_LOCAL = False
-    USE_GPU_GLOBAL = True
+    USE_GPU_GLOBAL = False
     NUM_GPU = 1
 
 
@@ -76,7 +76,7 @@ class RecordingParameters:
     WANDB =  True
     TENSORBOARD = True
     TXT_WRITER =  True
-    ENTITY = 'yutong'
+    ENTITY = 'jianxiongtho'
     TIME = datetime.datetime.now().strftime('%d-%m-%y%H%M')
     EXPERIMENT_PROJECT = 'MAPF'
     EXPERIMENT_NAME = 'SCRIMP'

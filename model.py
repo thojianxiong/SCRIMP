@@ -16,7 +16,7 @@ class Model(object):
         """initialization"""
         self.ID = env_id
         self.device = device
-        self.network = SCRIMPNet().to(device)  # neural network
+        self.network = SCRIMPNet() .to(device)  # neural network
         if global_model:
             self.net_optimizer = optim.Adam(self.network.parameters(), lr=TrainingParameters.lr)
             # self.multi_gpu_net = torch.nn.DataParallel(self.network) # training on multiple GPU

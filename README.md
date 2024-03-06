@@ -1,6 +1,8 @@
 # SCRIMP
 This is the code for implementing the SCRIMP algorithm :`SCRIMP: Scalable Communication for Reinforcement- and Imitation-Learning-Based Multi-Agent Pathfinding`
 
+Contains updates by Jian Xiong
+
 ## Requirements
 
 Python == 3.7

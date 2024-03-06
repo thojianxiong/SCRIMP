@@ -10,3 +10,6 @@ setproctitle==1.2.2
 tensorflow==1.14.0
 torch==1.12.1+cu113
 wandb
+protobuf==3.20.1
+pyglet==1.5.28
+

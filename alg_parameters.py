@@ -15,6 +15,7 @@ class EnvParameters:
     GOAL_REWARD = 0.0
     COLLISION_COST = -2
     BLOCKING_COST = -1
+    ONLINE_FACTOR = 10  # multiple of number of agents of goals to finish
 
 
 class TrainingParameters:
@@ -74,7 +75,7 @@ class SetupParameters:
 class RecordingParameters:
     RETRAIN = False
     WANDB =  True
-    TENSORBOARD = True
+    TENSORBOARD = False
     TXT_WRITER =  True
     ENTITY = 'jianxiongtho'
     TIME = datetime.datetime.now().strftime('%d-%m-%y%H%M')
@@ -104,6 +105,7 @@ all_args = {'N_AGENTS': EnvParameters.N_AGENTS, 'N_ACTIONS': EnvParameters.N_ACT
             'IDLE_COST': EnvParameters.IDLE_COST, 'GOAL_REWARD': EnvParameters.GOAL_REWARD,
             'COLLISION_COST': EnvParameters.COLLISION_COST,
             'BLOCKING_COST': EnvParameters.BLOCKING_COST,
+            'ONLINE_FACTOR': EnvParameters.ONLINE_FACTOR,
             'lr': TrainingParameters.lr, 'GAMMA': TrainingParameters.GAMMA, 'LAM': TrainingParameters.LAM,
             'CLIPRANGE': TrainingParameters.CLIP_RANGE, 'MAX_GRAD_NORM': TrainingParameters.MAX_GRAD_NORM,
             'ENTROPY_COEF': TrainingParameters.ENTROPY_COEF,
